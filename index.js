@@ -10,7 +10,7 @@ const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
 
-mongoose.connect('mongodb+srv://danielruizgc8:Fj4BlhsVUccBLEVc@emaily-saatm.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect(keys.mongoURI);
 
 // initiate express app instance
 const app = express(keys.mongoURI);
