@@ -13,7 +13,7 @@ require('./services/passport');
 mongoose.connect(keys.mongoURI);
 
 // initiate express app instance
-const app = express(keys.mongoURI);
+const app = express();
 
 app.use(
     cookieSession({
